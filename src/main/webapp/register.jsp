@@ -5,7 +5,7 @@
   Time: 20:45
   To change this template use File | Settings | File Templates.
 --%>
-<%@include file="header.jsp"%>
+<%@include file="WEB-INF/views/header.jsp"%>
 
 <form method="post" action="register">
     <table>
@@ -23,4 +23,4 @@
         <tr> <td></td><td><input type="submit" value="Register"/></td>  </tr>
     </table>
 </form>
-<%@include file="footer.jsp"%>
+<%@include file="WEB-INF/views/footer.jsp"%>

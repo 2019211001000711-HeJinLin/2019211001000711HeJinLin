@@ -8,7 +8,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@include file="header.jsp"%>
+<%@include file="WEB-INF/views/header.jsp"%>
 <%@page import="java.sql.ResultSet" %>
 <%@ page import="java.sql.Date" %>
 <%@ page import="java.text.SimpleDateFormat" %>
@@ -41,4 +41,4 @@
     }
     %>
 </table>
-<%@include file="footer.jsp"%>
+<%@include file="WEB-INF/views/footer.jsp"%>
