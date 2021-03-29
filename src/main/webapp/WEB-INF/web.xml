@@ -71,7 +71,7 @@
     </context-param>
     <context-param>
         <param-name>password</param-name>
-        <param-value>admin1234567890</param-value>
+        <param-value>123456</param-value>
     </context-param>
 
     <!--<servlet>
@@ -91,7 +91,7 @@
         </init-param>
         <init-param>
             <param-name>password</param-name>
-            <param-value>admin1234567890</param-value>
+            <param-value>123456</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>

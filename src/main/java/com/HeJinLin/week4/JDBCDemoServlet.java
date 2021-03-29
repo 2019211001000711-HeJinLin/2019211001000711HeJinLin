@@ -15,7 +15,7 @@ import java.sql.SQLException;
                 @WebInitParam(name="driver",value="com.microsoft.sqlserver.jdbc.SQLServerDriver"),
                 @WebInitParam(name="url",value="jdbc:sqlserver://localhost;databaseName=userdb;"),
                 @WebInitParam(name="username",value="sa"),
-                @WebInitParam(name="password",value="admin1234567890"),
+                @WebInitParam(name="password",value="123456"),
         },loadOnStartup = 1
 )
 public class JDBCDemoServlet extends HttpServlet {
