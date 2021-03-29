@@ -5,28 +5,22 @@
   Time: 20:45
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
-<form method="post" action="register">
+<%@include file="header.jsp"%>
+
+<form method="post" action="/2019211001000711HeJinLin_war_exploded/login">
     <table>
-        <tr> <td class="right">username：</td> <td><input type="text" name="username" required><br/></td></tr>
-        <tr> <td class="right">password：</td> <td><input type="password" name="password" required minlength="8"><br/></td></tr>
-        <tr> <td class="right">email：</td> <td><input type="email" name="email" required><br/></td></tr>
+        <tr> <td class="right">username:</td> <td><input type="text" name="username" required="true"><br/></td></tr>
+        <tr> <td class="right">password:</td> <td><input type="password" name="password" required minlength="8"><br/></td></tr>
+        <tr> <td class="right">email:</td> <td><input type="email" name="email" required="true"><br/></td></tr>
         <tr>
-            <td class="right">Gender：</td>
+            <td class="right">Gender:</td>
             <td>
                 <input type="radio" name="gender" value="Male" checked="checked"/> Male <!-- checked="checked"默认选择项 -->
                 <input type="radio" name="gender" value="Female"/> Female
             </td>
         </tr>
-        <tr> <td class="right">birthdate：</td> <td><input type="date" name="birthdate" required dataformatas="yyyy-dd-mm"><br/></td></tr>
+        <tr> <td class="right">birthdate:</td> <td><input type="date" name="birthdate" required dataformatas="yyyy-dd-mm"><br/></td></tr>
         <tr> <td></td><td><input type="submit" value="Register"/></td>  </tr>
     </table>
 </form>
-
-</body>
-</html>
+<%@include file="footer.jsp"%>
