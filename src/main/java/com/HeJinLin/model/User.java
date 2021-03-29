@@ -3,19 +3,19 @@ import java.util.Date;
 
 public class User {
     private int id;
-    private String usernamne;
+    private String username;
     private String password;
     private String email;
     private String gender;
-    private java.util.Date birthdate;
+    private Date birthdate;
 
-    public User(){
+    public User() {
 
     }
 
     public User(int id, String usernamne, String password, String email, String gender, Date birthdate) {
         this.id = id;
-        this.usernamne = usernamne;
+        this.username = usernamne;
         this.password = password;
         this.email = email;
         this.gender = gender;
@@ -31,11 +31,11 @@ public class User {
     }
 
     public String getUsernamne() {
-        return usernamne;
+        return username;
     }
 
-    public void setUsernamne(String usernamne) {
-        this.usernamne = usernamne;
+    public void setUsername(String usernamne) {
+        this.username = usernamne;
     }
 
     public String getPassword() {
@@ -74,11 +74,12 @@ public class User {
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", usernamne='" + usernamne + '\'' +
+                ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", email='" + email + '\'' +
                 ", gender='" + gender + '\'' +
                 ", birthdate=" + birthdate +
                 '}';
     }
+
 }
