@@ -7,7 +7,7 @@
 --%>
 <%@include file="header.jsp"%>
 
-<form method="post" action="/2019211001000711HeJinLin_war_exploded/login">
+<form method="post" action="register">
     <table>
         <tr> <td class="right">username:</td> <td><input type="text" name="username" required="true"><br/></td></tr>
         <tr> <td class="right">password:</td> <td><input type="password" name="password" required minlength="8"><br/></td></tr>
