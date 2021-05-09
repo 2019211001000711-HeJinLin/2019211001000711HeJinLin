@@ -10,7 +10,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>anyName</servlet-name>
-        <url-pattern>/hello</url-pattern>
+        <url-pattern>/hello1</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -102,4 +102,12 @@
     <welcome-file-list>
         <welcome-file>home</welcome-file>
     </welcome-file-list>
+  <!--<filter>
+      <filter-name>HelloFilter</filter-name>
+      <filter-class>com.HeJinLin.filter.HelloFilter</filter-class>
+  </filter>
+    <filter-mapping>
+        <filter-name>HelloFilter</filter-name>
+        <url-pattern>/hello-servlet</url-pattern>
+    </filter-mapping>-->
 </web-app>
