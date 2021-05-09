@@ -11,10 +11,10 @@
 <%
     User u=(User) session.getAttribute("user");
 %>
-<form method="post" action="/2019211001000711HeJinLin_war_exploded/updateUser">
+<form method="post" action="/updateUser">
     <table>
         <tr> <td>id:</td> <td><input type="text" name="id" value="<%=u.getId()%>" required><br/></td></tr>
-        <tr> <td>username:</td> <td><input type="text" name="username" value="<%=u.getUsernamne()%>"><br/></td></tr>
+        <tr> <td>username:</td> <td><input type="text" name="username" value="<%=u.getUsername()%>"><br/></td></tr>
         <tr> <td>password:</td> <td><input type="password" name="password" value="<%=u.getPassword()%>"><br/></td></tr>
         <tr> <td>email:</td> <td><input type="email" name="email" value="<%=u.getEmail()%>"><br/></td></tr>
         <tr>

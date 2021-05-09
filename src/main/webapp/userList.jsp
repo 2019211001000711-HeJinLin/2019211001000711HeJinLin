@@ -19,7 +19,7 @@
         <td>username</td>
         <td>password</td>
         <td>email</td>
-        <td>Gender</td>
+        <td>gender</td>
         <td>birthdate</td>
     </tr>
     <%
