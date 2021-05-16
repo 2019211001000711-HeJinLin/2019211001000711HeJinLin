@@ -24,11 +24,11 @@
 				<table class="table table-condensed">
 					<thead>
 						<tr class="cart_menu">
-							<td class="description"><strong>username</strong></td>
-							<td class="description"><strong>password</strong></td>
-							<td class="description"><strong>email</strong></td>
-							<td class="description"><strong>gender</strong></td>
-							<td class="description"><strong>birthdate</strong></td>
+							<td class="description"><strong>Username</strong></td>
+							<td class="description"><strong>Password</strong></td>
+							<td class="description"><strong>Email</strong></td>
+							<td class="description"><strong>Gender</strong></td>
+							<td class="description"><strong>Date of Birth</strong></td>
 							
 							<td ></td>
 						</tr>
@@ -50,7 +50,7 @@
 							<p>gender </p>
 							</td>
 							<td class="cart_description">
-								<p >birthdate</p>
+								<p >birthDate</p>
 							</td>
 							
 							<td class="cart_delete">
