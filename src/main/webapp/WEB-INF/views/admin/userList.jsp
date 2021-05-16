@@ -35,42 +35,49 @@
 					</thead>
 					<tbody>
 					<!-- loop_start -->
-					
+					<sql:setDataSource var="myDS"
+									   driver="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+									   url="jdbc:sqlserver://localhost;databaseName=userdb;"
+									   user="sa"
+									   password="123456"/>
+					<sql:query var="allUser" dataSource="${myDS}">
+						Select * from usertable;
+					</sql:query>
+                    <c:forEach var="row" items="${allUser.rows}">
 						<tr>
-							<td class="cart_description">
-								<p>username</p>
-							</td>
-								<td class="cart_description">
-								<p>password</p>
-							</td>
-							<td class="cart_description">
-								<p>email </p>
-							</td>
-							<td class="cart_description">
-							<p>gender </p>
-							</td>
-							<td class="cart_description">
-								<p >birthDate</p>
-							</td>
-							
+						<td class="cart_description">
+						<p>${row.username}</p>
+						</td>
+						<td class="cart_description">
+						<p>${row.password}</p>
+						</td>
+						<td class="cart_description">
+						<p>${row.email} </p>
+						</td>
+						<td class="cart_description">
+						<p>${row.gender} </p>
+						</td>
+						<td class="cart_description">
+						<p >${row.birthDate}</p>
 							<td class="cart_delete">
-							   <a class="cart_quantity_update" href="<%=basePath %>admin/userEdit?userId=id" ><i class="fa fa-edit"></i></a>
-								<a class="cart_quantity_delete" href="<%=basePath%>admin/userDelete?userId=id" ><i class="fa fa-times"></i></a>
+								<a class="cart_quantity_update" href="<%=basePath %>admin/userEdit?userId=${row.id}" ><i class="fa fa-edit"></i></a>
+								<a class="cart_quantity_delete" href="<%=basePath%>admin/userDelete?userId=${row.id}" ><i class="fa fa-times"></i></a>
 							</td>
 						</tr>
+					</c:forEach>
+					<!-- loop_end -->
+					</tbody>
+				</table>
+			<ul class="pagination">
 
-						<!-- loop_end -->
-		</tbody>
-		</table>
-		<ul class="pagination">
-		
-		<li><a href="">&laquo;</a></li>
-							<li class="active"><a href="">1</a></li>
-							<li><a href="">2</a></li>
-							<li><a href="">3</a></li>
-							<li><a href="">&raquo;</a></li>
-						</ul>
+				<li><a href="">&laquo;</a></li>
+				<li class="active"><a href="">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+				<li><a href="">&raquo;</a></li>
+			</ul>
 		</div>
 		</div>
-		</section>
- <%@include file="../footer.jsp" %>
+</section>
+
+<%@include file="../footer.jsp" %>
