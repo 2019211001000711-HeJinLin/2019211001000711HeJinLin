@@ -13,11 +13,11 @@
 %>
 
 <table>
-    <tr><td>username:</td><td><%=u.getUsername()%></td></tr>
-    <tr><td>password:</td><td><%=u.getPassword()%></td></tr>
-    <tr><td>email:</td><td><%=u.getEmail()%></td></tr>
-    <tr><td>gender:</td><td><%=u.getGender()%></td></tr>
-    <tr><td>birthdate:</td><td><%=u.getBirthdate()%></td></tr>
+    <tr><td>username:</td><td><%=user.getUsernamne()%></td></tr>
+    <tr><td>password:</td><td><%=user.getPassword()%></td></tr>
+    <tr><td>email:</td><td><%=user.getEmail()%></td></tr>
+    <tr><td>gender:</td><td><%=user.getGender()%></td></tr>
+    <tr><td>birthdate:</td><td><%=user.getBirthdate()%></td></tr>
     <tr><a href="updateUser">update</a> </tr>
 </table>
 <%@include file="footer.jsp"%>

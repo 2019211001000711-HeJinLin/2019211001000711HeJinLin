@@ -13,9 +13,9 @@ public class User {
 
     }
 
-    public User(int id, String username, String password, String email, String gender, Date birthdate) {
+    public User(int id, String usernamne, String password, String email, String gender, Date birthdate) {
         this.id = id;
-        this.username = username;
+        this.username = usernamne;
         this.password = password;
         this.email = email;
         this.gender = gender;
@@ -30,7 +30,7 @@ public class User {
         this.id = id;
     }
 
-    public String getUsername() {
+    public String getUsernamne() {
         return username;
     }
 
@@ -81,7 +81,5 @@ public class User {
                 ", birthdate=" + birthdate +
                 '}';
     }
-
-
 
 }
