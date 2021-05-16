@@ -13,12 +13,12 @@
 %>
 <form method="post" action="/2019211001000711HeJinLin_war_exploded/updateUser">
   <table>
-    <tr> <td>Id:</td> <td><input type="text" name="id" value="<%=u.getId()%>" required><br/></td></tr>
-    <tr> <td>Username:</td> <td><input type="text" name="username" value="<%=u.getUsername()%>"><br/></td></tr>
+    <tr> <td>id:</td> <td><input type="text" name="id" value="<%=u.getId()%>" required><br/></td></tr>
+    <tr> <td>username:</td> <td><input type="text" name="username" value="<%=u.getUsername()%>"><br/></td></tr>
     <tr> <td>password:</td> <td><input type="password" name="password" value="<%=u.getPassword()%>"><br/></td></tr>
-    <tr> <td>Email:</td> <td><input type="email" name="email" value="<%=u.getEmail()%>"><br/></td></tr>
+    <tr> <td>email:</td> <td><input type="email" name="email" value="<%=u.getEmail()%>"><br/></td></tr>
     <tr>
-      <td>Gender:</td>
+      <td>gender:</td>
       <td>
         <input type="radio" name="gender" value="Male" <%="Male".equals(u.getGender())?"checked":""%>/> Male
         <input type="radio" name="gender" value="Female" <%="Female".equals(u.getGender())?"checked":""%>/> Female
